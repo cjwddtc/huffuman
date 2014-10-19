@@ -32,11 +32,11 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="bit.cpp" />
+		<Unit filename="bit.h" />
 		<Unit filename="decode.cpp" />
 		<Unit filename="huffuman.cpp" />
-		<Unit filename="huffuman.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
+		<Unit filename="huffuman.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

@@ -17,6 +17,5 @@ int main()
 //        masd+=order[i]->freq*order[i]->getlen();
 //    }
     //printf("%ld\n",masd);
-    bit *a=codetobit(fp);
-    printf("%d\n",a->size>>3);
+    unsigned char *a=codetobit(fp);
 }

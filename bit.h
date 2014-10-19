@@ -1,17 +1,14 @@
 #ifndef BIT_H_INCLUDED
 #define BIT_H_INCLUDED
 #include "stdio.h"
-struct BIT{
-    unsigned char *a;
-    int size;
-    int max;
-};
+typedef struct
+{
+    unsigned char bitposition:3;
+unsigned int ptrposition:
+    sizeof(long)*8-3;
+} position;
 
-typedef struct BIT bit;
-bit *getbit();
-unsigned char readbit(bit *bi);
-void addone(bit *a,unsigned char value);
-void writeToFile(bit *bi,FILE *fp);
-
+unsigned char readbit(unsigned char *a,long *pos);
+unsigned int addone(unsigned char *a,long *pos,unsigned char value);
 
 #endif // BIT_H_INCLUDED

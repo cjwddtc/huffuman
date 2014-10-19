@@ -1,26 +1,26 @@
 # depslib dependency file v1.0
-1413688405 source:f:\program\c++source file\huffuman\main.cpp
+1413704738 source:f:\program\c++source file\huffuman\main.cpp
 	"huffuman.h"
 
 1413648001 source:f:\program\c++source file\huffuman\decode.cpp
 	<iostream>
 
-1413688692 source:f:\program\c++source file\huffuman\bit.cpp
+1413704885 source:f:\program\c++source file\huffuman\bit.cpp
 	"bit.h"
 	"stdio.h"
 	"stdlib.h"
 	"string.h"
 
-1413687573 f:\program\c++source file\huffuman\bit.h
+1413704872 f:\program\c++source file\huffuman\bit.h
 	"stdio.h"
 
-1413688313 source:f:\program\c++source file\huffuman\huffuman.cpp
+1413704872 source:f:\program\c++source file\huffuman\huffuman.cpp
 	<stdio.h>
 	<algorithm>
 	"huffuman.h"
 	<assert.h>
 	"string.h"
 
-1413688395 f:\program\c++source file\huffuman\huffuman.h
+1413704486 f:\program\c++source file\huffuman\huffuman.h
 	"bit.h"
 
