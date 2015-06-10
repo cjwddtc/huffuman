@@ -5,6 +5,12 @@
 
 using namespace std;
 
+typedef struct
+{
+    unsigned char bitposition:3;
+    unsigned char ptrposition:29;
+} position;
+
 unsigned char readbit(unsigned char *a,long *pos)
 {
     return (a[((position *)pos)->ptrposition]<<((position*)pos)->bitposition)&0b10000000;

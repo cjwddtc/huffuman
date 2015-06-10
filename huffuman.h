@@ -4,7 +4,7 @@
 #include "bit.h"
 void maketree();
 void init(unsigned long freq[MAX]);
-unsigned char *codetobit(FILE *fp);
+unsigned char *codetobit(FILE *fp,unsigned long *n);
 void getfreq(FILE *fp,unsigned long freq[MAX]);
 
 #endif // HUFFUMAN_H_INCLUDED

@@ -117,12 +117,12 @@ void maketree()
     }
 }
 
-unsigned char *codetobit(FILE *fp)
+unsigned char *codetobit(FILE *fp,unsigned long *n)
 {
     fseek(fp,0,2);
     long len=ftell(fp);
-    unsigned char *ptr=(unsigned char *)malloc(len);
     rewind(fp);
+    unsigned char *ptr=(unsigned char *)malloc(len);
     len=0;
     unsigned char ch=fgetc(fp);
     unsigned char a[256];
@@ -141,6 +141,7 @@ unsigned char *codetobit(FILE *fp)
         }
         ch=fgetc(fp);
     }
-    printf("%d",len>>3);
+    *n=len>>3;
     return ptr;
 }
+
